@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Components/header';
-// import Slideshow from './Components/slider';
+import Slideshow from './Components/slider';
 import Home from './Components/home';
 import Footer from './Components/footer';
 import './style.css';
@@ -15,6 +15,7 @@ const App = () => (
   <MuiThemeProvider>
     <div>
     	<Header />
+    	<Slideshow />
     	<Home />
     	<Footer />
     </div>
