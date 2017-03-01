@@ -13,7 +13,7 @@ var Slideshow = React.createClass({
 	     	dots: false,
 	     	infinite: true,
 	     	fade: true,
-	     	speed: 2000,
+	     	speed: 1800,
 	     	slidesToShow: 1,
 	     	slidesToScroll: 1
 	    };

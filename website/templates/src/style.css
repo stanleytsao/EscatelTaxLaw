@@ -4,12 +4,13 @@ body {
 }
 
 button {
-	background-color: red;
+	background-color: rgba(3, 76, 140, 0.25);
+	margin: 20px !important;
 }
 
 header {
 	background-color: #022341;
-	max-height: 100px;
+	height: 85px;
 }
 
 .slideshow {
@@ -18,4 +19,13 @@ header {
 
 .welcome, .links {
 	background-color: rgba(3, 76, 140, 0.25);
+	margin-top: 20px;
+	padding: 10px 20px !important;
+	height: 300px;
+}
+
+footer {
+	background-color: #022341;
+	padding: 20px;
+	margin-top: 20px;
 }
