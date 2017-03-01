@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './Components/header';
+// import Slideshow from './Components/slider';
+import Home from './Components/home';
 import Footer from './Components/footer';
 import './style.css';
 import './bootstrap.css';
@@ -11,17 +14,9 @@ injectTapEventPlugin();
 const App = () => (
   <MuiThemeProvider>
     <div>
-      <header>
-      	<h1>Escatel Tax Law</h1>
-      	<button>Home</button>
-      	<button>About</button>
-      	<button>Practice Areas</button>
-      	<button>Contact Us</button>
-      </header>
-      <div className="slider"><h1>Slider</h1></div>
-      <main>Main</main>
-      <aside>Links</aside>
-      <Footer />
+    	<Header />
+    	<Home />
+    	<Footer />
     </div>
   </MuiThemeProvider>
 );

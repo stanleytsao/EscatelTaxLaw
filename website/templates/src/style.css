@@ -1,0 +1,21 @@
+body {
+	background-color: #5A8FBF !important;
+	color: #F2F2F2 !important;
+}
+
+button {
+	background-color: red;
+}
+
+header {
+	background-color: #022341;
+	max-height: 100px;
+}
+
+.slideshow {
+	margin-top: 100px;
+}
+
+.welcome, .links {
+	background-color: rgba(3, 76, 140, 0.25);
+}
