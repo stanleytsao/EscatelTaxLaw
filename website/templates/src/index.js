@@ -4,8 +4,9 @@ import Header from './Components/header';
 import Slideshow from './Components/slider';
 import Home from './Components/home';
 import Footer from './Components/footer';
-import './style.css';
 import './bootstrap.css';
+import './font-awesome/css/font-awesome.min.css'
+import './style.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 

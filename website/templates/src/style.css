@@ -1,31 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+
 body {
-	background-color: #5A8FBF !important;
-	color: #F2F2F2 !important;
+	font-family: 'Oxygen', sans-serif;
+	color: #F2F2F2;
+	background-color: #5A8FBF;
 }
 
-button {
-	background-color: rgba(3, 76, 140, 0.25);
-	margin: 20px !important;
-}
-
+/*  Header and Logo  */
 header {
 	background-color: #022341;
-	height: 85px;
+	height: 60px;
+	padding: 10px 0;
 }
 
+.title {
+	float: left;
+	pointer-events: none;
+}
+
+.title span {
+	font-size: 2em !important;
+}
+
+/*  Nav  */
+header * {
+	color: #F2F2F2 !important;
+	text-transform: none !important;
+}
+
+.practiceAreas span{
+	padding-right: 30px !important;
+}
+
+.fa-caret-down {
+	margin-left: -25px;
+	margin-right: 17px;
+}
+
+.dropdown {
+	max-width: 285px;
+	display: none;
+}
+
+.menuItem {
+	margin-top: 20px;
+}
+
+main button {
+	background-color: rgba(3, 76, 140, 0.25);
+	margin: 10px;
+}
+
+/*  Slide Show  */
 .slideshow {
-	margin-top: 100px;
+	margin: 75px 0 0;
+	overflow: hidden;
 }
 
 .welcome, .links {
 	background-color: rgba(3, 76, 140, 0.25);
 	margin-top: 20px;
-	padding: 10px 20px !important;
-	height: 300px;
+	padding: 10px 20px;
+	height: 400px;
 }
 
+/*  Footer  */
 footer {
 	background-color: #022341;
 	padding: 20px;
 	margin-top: 20px;
 }
+
+
+

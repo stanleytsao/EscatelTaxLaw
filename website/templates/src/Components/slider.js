@@ -14,8 +14,6 @@ var Slideshow = React.createClass({
 	     	infinite: true,
 	     	fade: true,
 	     	speed: 1800,
-	     	slidesToShow: 1,
-	     	slidesToScroll: 1
 	    };
 		return (
 			<div className="container-fluid slideshow">
