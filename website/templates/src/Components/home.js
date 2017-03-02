@@ -16,9 +16,18 @@ const Home = () => {
 				<div className="col-md-3 text-center">
 					<div className="links">
 						<h4>News, Events, Updates...</h4><br />
-						<button>LinkedIn</button><br />
-						<button>Twitter</button><br />
-						<button>Social Media</button><br />
+						<button>
+							<i className="fa fa-linkedin" aria-hidden="true"></i>{' '}LinkedIn
+						</button><br />
+						<button>
+							<i className="fa fa-twitter" aria-hidden="true"></i>{' '}Twitter
+						</button><br />
+						<button>
+							<i className="fa fa-facebook" aria-hidden="true"></i>{' '}Facebook
+						</button><br />
+						<button>
+							<i className="fa fa-google-plus" aria-hidden="true"></i>{' '}Google
+						</button><br />
 					</div>
 					
 				</div>

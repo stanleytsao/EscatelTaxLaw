@@ -4,18 +4,14 @@ import FlatButton from 'material-ui/FlatButton';
 class Header extends React.Component {
 
 	handleClick = (index) => {
-		// var main = document.getElementById('main').childNodes
-
-		// for (var i = 0; i < main.length; i++) {
-		// 	if (main[i].id !== index && main[i].style.display === 'block') {
-		// 		main[i].style.display = 'none';
-		// 	} else if (main[i].id === index) {
-		// 		main[i].style.display = 'block';
-		// 	} else {
-		// 		console.log('fail');
-		// 	}
-		// }
-		
+		var main = document.getElementById('main').childNodes
+		for (var i = 0; i < main.length; i++) {
+			if (main[i].id === index) {
+				main[i].style.display = 'block';
+			} else {
+				main[i].style.display = 'none';
+			}
+		}
   	}
 
 	render() {
@@ -31,8 +27,10 @@ class Header extends React.Component {
 					<FlatButton className="practiceAreas" label="Practice Areas" onClick={this.handleClick.bind(this, 'PA')} />
 					<i className="fa fa-caret-down" aria-hidden="true"></i>
 
+					<FlatButton label="Contact Us" onClick={this.handleClick.bind(this, 'contact')} style={{width: '100px'}} />
+					<a href="#" style={{display: 'none'}}><i className="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+					
 					<div className="dropdown">
-			        	<FlatButton label="Practice Areas" />
 			        	<FlatButton label="Federal & State Fraud/Evasion" />
 			        	<FlatButton label="Tax Controversy Practice" />
 			        	<FlatButton label="Employment Tax Audit (Federal & State)" />
@@ -41,9 +39,6 @@ class Header extends React.Component {
 			        	<FlatButton label="International Taxation" />
 			        	<FlatButton label="Trusts & Estates" />
 			        </div>
-
-					<FlatButton label="Contact Us" onClick={this.handleClick.bind(this, 'contact')} />
-					<a href="#"><i className="fa fa-bars fa-2x dropdown" aria-hidden="true"></i></a>
 
 				</div>	
 			</header>
