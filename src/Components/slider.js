@@ -16,13 +16,11 @@ var Slideshow = React.createClass({
 	     	speed: 1800,
 	    };
 		return (
-			<div className="container-fluid slideshow">
-				<Slider {...settings}>
-					<img id="slider" src={BayBridge2} alt="Bay Bridge"/>
-					<img id="slider" src={LakeMerritt} alt="Lake Merritt"/>
-					<img id="slider" src={PiedmontGate3} alt="Piedmont Gate"/>
-				</Slider>
-			</div>
+			<Slider {...settings}>
+				<img id="slider" src={BayBridge2} alt="Bay Bridge"/>
+				<img id="slider" src={LakeMerritt} alt="Lake Merritt"/>
+				<img id="slider" src={PiedmontGate3} alt="Piedmont Gate"/>
+			</Slider>
 		);
 	}
 });
