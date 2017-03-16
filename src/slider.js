@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
-import BayBridge2 from '../img/BayBridge2.jpg';
-import LakeMerritt from '../img/LakeMerritt.jpg';
-import PiedmontGate3 from '../img/PiedmontGate3.png';
+import BayBridge2 from './img/BayBridge2.jpg';
+import LakeMerritt from './img/LakeMerritt.jpg';
+import PiedmontGate3 from './img/PiedmontGate3.png';
 
 var Slideshow = React.createClass({
 	render: function () {

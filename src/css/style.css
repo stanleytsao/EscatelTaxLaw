@@ -10,7 +10,7 @@ body {
 /*  Header and Logo  */
 header {
 	background: linear-gradient(to bottom,#4072bb 0%,#396bb4 18%,#194a97 79%,#104190 100%);
-	height: 46px;
+	height: 100px;
 	padding: 5px 0;
 }
 
