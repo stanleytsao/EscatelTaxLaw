@@ -1,14 +1,122 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 $font-stack: 'Roboto', Helvetica, sans-serif;
 $primary-color: #183152;
-$alt-color: #375D81;
+$alt-color: #E1E6FA;
 $mid-color: #ABC8E2;
 $primary-text-color: #C4D7ED;
-$alt-text-color: #E1E6FA;
+$alt-text-color: #375D81;
+
+/*  General Styles  */
+/*==================================================*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
-  font: 100% $font-stack;
-  color: $primary-text-color;
-  background: linear-gradient(to left,$primary-color 0%,$alt-color 100%);
+	background: linear-gradient(to right,$primary-color 0%,$primary-color 50%,$mid-color 100%);
+	color: $primary-text-color;
+	font: 120% $font-stack;
+}
+
+header, footer {
+	background-color: $alt-color;
+	color: $alt-text-color
+}
+
+/*  Logo Styles  */
+/*==================================================*/
+.logo {
+	width: 12em;
+}
+
+/*  Header Styles  */
+/*==================================================*/
+header {
+	padding: 0.5em 0;
+	span {
+		text-transform: none !important;
+		font-size: 1em !important;
+	}
+}
+
+nav {
+	margin-top: 30px;
+	#Home {
+		vertical-align: sub;
+	}
+	#practiceAreas {
+		padding: 0 10px !important;
+	}
+}
+
+#dropdown {
+	transition: 0.5s ease;
+	opacity: 0;
+	background-color: $alt-color;
+	max-width: 260px;
+	position: absolute;
+	right: 103px;
+	top: 66px;
+	button {
+		
+		height: 0px !important;
+		width: 100%;
+    	text-align: right !important;
+    	transition: 0.5s ease;
+    	span {
+    		padding-right: 25px !important;
+    	}
+	}
+}
+
+#practiceAreas:hover ~ #dropdown {
+	opacity: 1;
+	button {
+		height: 36px !important;
+	}
+}
+
+#dropdown:hover {
+	opacity: 1;
+	button {
+		height: 36px !important;
+	}
+}
+
+/*  Footer Styles  */
+/*==================================================*/
+footer {
+	padding: 1em 0;
+	margin-top: 1em;
+	.col-md-4 {
+		padding: 1em 0;
+	}
+	p {
+		margin: 10px 0;
+	}
+	hr {
+		display: none;
+		margin: 0
+	}
+}
+
+@media (min-width: 550px) and (max-width: 992px){
+	.col-md-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+@media (max-width: 549px){
+	#footerLogo {
+		display: none;
+	}
+	hr {
+		border-top: 2px solid $mid-color;
+		display: block !important;
+		margin: 0 auto !important;
+		width: 70%;
+	}
 }
 

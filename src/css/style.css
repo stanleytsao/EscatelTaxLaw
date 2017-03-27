@@ -1,7 +1,90 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+/*  General Styles  */
+/*==================================================*/
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 body {
-  font: 100% "Roboto", Helvetica, sans-serif;
+  background: linear-gradient(to right, #183152 0%, #183152 50%, #ABC8E2 100%);
   color: #C4D7ED;
-  background: linear-gradient(to left, #183152 0%, #375D81 100%); }
+  font: 120% "Roboto", Helvetica, sans-serif; }
+
+header, footer {
+  background-color: #E1E6FA;
+  color: #375D81; }
+
+/*  Logo Styles  */
+/*==================================================*/
+.logo {
+  width: 12em; }
+
+/*  Header Styles  */
+/*==================================================*/
+header {
+  padding: 0.5em 0; }
+  header span {
+    text-transform: none !important;
+    font-size: 1em !important; }
+
+nav {
+  margin-top: 30px; }
+  nav #Home {
+    vertical-align: sub; }
+  nav #practiceAreas {
+    padding: 0 10px !important; }
+
+#dropdown {
+  transition: 0.5s ease;
+  opacity: 0;
+  background-color: #E1E6FA;
+  max-width: 260px;
+  position: absolute;
+  right: 103px;
+  top: 66px; }
+  #dropdown button {
+    height: 0px !important;
+    width: 100%;
+    text-align: right !important;
+    transition: 0.5s ease; }
+    #dropdown button span {
+      padding-right: 25px !important; }
+
+#practiceAreas:hover ~ #dropdown {
+  opacity: 1; }
+  #practiceAreas:hover ~ #dropdown button {
+    height: 36px !important; }
+
+#dropdown:hover {
+  opacity: 1; }
+  #dropdown:hover button {
+    height: 36px !important; }
+
+/*  Footer Styles  */
+/*==================================================*/
+footer {
+  padding: 1em 0;
+  margin-top: 1em; }
+  footer .col-md-4 {
+    padding: 1em 0; }
+  footer p {
+    margin: 10px 0; }
+  footer hr {
+    display: none;
+    margin: 0; }
+
+@media (min-width: 550px) and (max-width: 992px) {
+  .col-md-4 {
+    float: left;
+    width: 33.33%; } }
+@media (max-width: 549px) {
+  #footerLogo {
+    display: none; }
+
+  hr {
+    border-top: 2px solid #ABC8E2;
+    display: block !important;
+    margin: 0 auto !important;
+    width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */

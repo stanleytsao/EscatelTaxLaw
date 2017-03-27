@@ -61,29 +61,31 @@ class Container extends React.Component {
             <div className="container">
               
               <span className="col-md-4">
-                <h3>Escatel Tax Law</h3>
-                <h5>{this.state.value}</h5>
+                <img className="logo" src={require("./img/ETLlogo.png")} alt=""/>
               </span>
               
               <div className="col-md-8 text-right">
                 <nav>
                   <FlatButton id="Home" onClick = {() => {this.handleButton("Home")}}><i className="fa fa-home fa-2x" aria-hidden="true"></i></FlatButton>
                   <FlatButton id="About" onClick = {() => {this.handleButton("About")}}>About</FlatButton>
-                  <FlatButton id="practiceAreas">Practice Areas<i className="fa fa-caret-down" aria-hidden="true"></i></FlatButton>
+                  <FlatButton id="practiceAreas">Practice Areas  <i className="fa fa-chevron-down" aria-hidden="true"></i></FlatButton>
                   <FlatButton id="Contact" onClick = {() => {this.handleButton("Contact")}}>Contact</FlatButton>
+
+                  <div id="dropdown">
+                    <FlatButton onClick = {() => {this.handleButton("practiceArea1")}} label="Federal & State Fraud/Evasion" />
+                    <FlatButton onClick = {() => {this.handleButton("practiceArea2")}} label="Tax Controversy Practice" />
+                    <FlatButton onClick = {() => {this.handleButton("practiceArea3")}} label="Employment Tax Audit (Federal & State)" />
+                    <FlatButton onClick = {() => {this.handleButton("practiceArea4")}} label="Business Formation & Tax Planning" />
+                    <FlatButton onClick = {() => {this.handleButton("practiceArea5")}} label="CA Residency Source of Income Audits" />
+                    <FlatButton onClick = {() => {this.handleButton("practiceArea6")}} label="International Taxation" />
+                    <FlatButton onClick = {() => {this.handleButton("practiceArea7")}} label="Trusts & Estates" />
+                  </div>
+                  
                 </nav>
                 
                 <a href="#" style={{display: 'none'}}><i className="fa fa-bars fa-2x" aria-hidden="true"></i></a>
                 
-                <div className="dropdown">
-                  <FlatButton onClick = {() => {this.handleButton("practiceArea1")}} label="Federal & State Fraud/Evasion" />
-                  <FlatButton onClick = {() => {this.handleButton("practiceArea2")}} label="Tax Controversy Practice" />
-                  <FlatButton onClick = {() => {this.handleButton("practiceArea3")}} label="Employment Tax Audit (Federal & State)" />
-                  <FlatButton onClick = {() => {this.handleButton("practiceArea4")}} label="Business Formation & Tax Planning" />
-                  <FlatButton onClick = {() => {this.handleButton("practiceArea5")}} label="CA Residency Source of Income Audits" />
-                  <FlatButton onClick = {() => {this.handleButton("practiceArea6")}} label="International Taxation" />
-                  <FlatButton onClick = {() => {this.handleButton("practiceArea7")}} label="Trusts & Estates" />
-                </div>
+                
               </div>
             
             </div>
