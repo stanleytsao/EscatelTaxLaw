@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$font-stack: 'Roboto', Helvetica, sans-serif;
+$primary-color: #183152;
+$alt-color: #375D81;
+$mid-color: #ABC8E2;
+$primary-text-color: #C4D7ED;
+$alt-text-color: #E1E6FA;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-text-color;
+  background: linear-gradient(to left,$primary-color 0%,$alt-color 100%);
+}
+
