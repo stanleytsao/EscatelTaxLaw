@@ -21,6 +21,11 @@ header, header button, footer {
   width: 11em;
   padding: 1em; }
 
+/*  Slider Styles  */
+/*==================================================*/
+.slick-slider {
+  margin-top: 5em; }
+
 /*  Header Styles  */
 /*==================================================*/
 header {
@@ -84,22 +89,28 @@ nav {
 #hamburger {
   display: none;
   position: absolute;
-  right: 3em;
-  top: 2em;
+  right: 4.5em;
+  top: 3em;
   color: #183152; }
 
 #hamburger:hover {
   color: #ABC8E2; }
 
-@media (max-width: 700px) {
-  .col-md-4 {
+@media (max-width: 600px) {
+  header, header .container {
+    padding: 0 !important; }
+
+  #logo {
     width: 100% !important; }
 
   #nav {
     /*text-align: center;*/ }
 
   #hamburger {
-    display: block; } }
+    display: block; }
+
+  #dropdown {
+    top: 72px; } }
 /*  Main Content Styles  */
 /*==================================================*/
 main > div {
@@ -111,14 +122,16 @@ main > div {
 /*==================================================*/
 #home {
   background-color: transparent; }
+  #home div {
+    padding: 15px; }
   #home .welcome {
-    background-color: rgba(171, 200, 226, 0.3);
+    background-color: rgba(171, 200, 226, 0.4);
     min-height: 400px;
     padding: 1em 3em 3em; }
-    #home .welcome #quote {
+    #home .welcome .quote {
       font-family: 'Tangerine', cursive;
       font-size: 3em;
-      padding: 1em 3em; }
+      padding: 1em 2em; }
   #home .links {
     background-color: rgba(171, 200, 226, 0.3);
     min-height: 400px;
@@ -132,6 +145,15 @@ main > div {
   margin: 0.5em;
   width: 2em; }
 
+@media (max-width: 600px) {
+  main > div {
+    margin: 2em 1em; }
+
+  #Home {
+    padding: 0.5em; }
+
+  .quote {
+    padding: 0.5em !important; } }
 /*  Footer Styles  */
 /*==================================================*/
 footer {

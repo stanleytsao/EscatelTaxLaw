@@ -67,7 +67,7 @@ class Container extends React.Component {
           <header id="header" className="container-fluid navbar-fixed-top">
             <div className="container">
               
-              <span className="col-md-4">
+              <span id="logo" className="col-md-4">
                 <img className="logo" src={require("./img/ETLlogo.png")} alt="logo"  onClick = {() => {this.handleButton("Home")}}/>
               </span>
               
@@ -130,7 +130,7 @@ const MainContent = ({name}) => {
 // Fix responsive Nav
 (() => {
   var update = () => {
-    if (window.innerWidth > 700) {
+    if (window.innerWidth > 600) {
       document.getElementById("nav").className = "col-md-8 text-right"
     } else {
       document.getElementById("nav").className = "col-md-8 text-right hide"
