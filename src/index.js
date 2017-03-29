@@ -52,6 +52,13 @@ class Container extends React.Component {
       default: console.log('default case');
     }
   }
+  toggle() {
+    if (document.getElementById("nav").className === "col-md-8 text-right") {
+      document.getElementById("nav").className = "col-md-8 text-right hide"
+    } else {
+      document.getElementById("nav").className = "col-md-8 text-right"
+    }
+  }
   render() {
     return (
       <MuiThemeProvider>
@@ -61,12 +68,11 @@ class Container extends React.Component {
             <div className="container">
               
               <span className="col-md-4">
-                <img className="logo" src={require("./img/ETLlogo.png")} alt=""/>
+                <img className="logo" src={require("./img/ETLlogo.png")} alt="logo"  onClick = {() => {this.handleButton("Home")}}/>
               </span>
               
-              <div className="col-md-8 text-right">
-                <nav>
-                  <FlatButton id="Home" onClick = {() => {this.handleButton("Home")}}><i className="fa fa-home fa-2x" aria-hidden="true"></i></FlatButton>
+              <nav id="nav" className="col-md-8 text-right">
+                  <FlatButton id="Home" onClick = {() => {this.handleButton("Home")}}><i className="fa fa-home" aria-hidden="true"></i></FlatButton>
                   <FlatButton id="About" onClick = {() => {this.handleButton("About")}}>About</FlatButton>
                   <FlatButton id="practiceAreas">Practice Areas  <i className="fa fa-chevron-down" aria-hidden="true"></i></FlatButton>
                   <FlatButton id="Contact" onClick = {() => {this.handleButton("Contact")}}>Contact</FlatButton>
@@ -80,13 +86,12 @@ class Container extends React.Component {
                     <FlatButton onClick = {() => {this.handleButton("practiceArea6")}} label="International Taxation" />
                     <FlatButton onClick = {() => {this.handleButton("practiceArea7")}} label="Trusts & Estates" />
                   </div>
-                  
-                </nav>
-                
-                <a href="#" style={{display: 'none'}}><i className="fa fa-bars fa-2x" aria-hidden="true"></i></a>
                 
                 
-              </div>
+                
+              </nav>
+
+              <span id="hamburger" onClick = {() => {this.toggle()}}><i className="fa fa-bars fa-2x" aria-hidden="true"></i></span>
             
             </div>
           </header>
@@ -121,6 +126,19 @@ const MainContent = ({name}) => {
     default: console.log('default case');
   }
 }
+
+// Fix responsive Nav
+(() => {
+  var update = () => {
+    if (window.innerWidth > 700) {
+      document.getElementById("nav").className = "col-md-8 text-right"
+    } else {
+      document.getElementById("nav").className = "col-md-8 text-right hide"
+    }
+  }
+  window.addEventListener("load", update);
+  window.addEventListener("resize", update);
+})();
 
 ReactDOM.render(
   <Container />,

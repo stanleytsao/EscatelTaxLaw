@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Tangerine');
+
 $font-stack: 'Roboto', Helvetica, sans-serif;
 $primary-color: #183152;
 $alt-color: #E1E6FA;
 $mid-color: #ABC8E2;
 $primary-text-color: #C4D7ED;
 $alt-text-color: #375D81;
+
 
 /*  General Styles  */
 /*==================================================*/
@@ -14,7 +16,7 @@ html, body {
 }
 
 body {
-	background: linear-gradient(to right,$primary-color 0%,$primary-color 50%,$mid-color 100%);
+	background: linear-gradient(to right,$primary-color 0%,$primary-color 50%,rgba(24, 49, 82, 0.8) 100%);
 	color: $primary-text-color;
 	font: 120% $font-stack;
 }
@@ -24,30 +26,42 @@ header, header button, footer {
 	color: $alt-text-color !important;
 }
 
+
 /*  Logo Styles  */
 /*==================================================*/
 .logo {
-	width: 12em;
+	cursor: pointer;
+	width: 11em;
+	padding: 1em;
 }
+
 
 /*  Header Styles  */
 /*==================================================*/
 header {
-	padding: 0.5em 0;
+	/*padding: 0.5em 0;*/
 	span {
-		text-transform: none !important;
 		font-size: 1em !important;
+		text-transform: none !important;
 	}
 }
 
 nav {
-	margin-top: 30px;
+	margin-top: 36px;
 	#Home {
-		min-width: 65px !important;
-		vertical-align: sub;
+		min-width: 45px !important;
+		i {
+			font-size: 1.8em;
+		}
+	}
+	#About {
+		min-width: 60px !important;
 	}
 	#practiceAreas {
-		padding: 0 10px !important;
+		padding: 0 12px !important;
+	}
+	#Contact {
+		min-width: 65px !important;
 	}
 	#Home:hover, #About:hover, #Contact:hover {
 		background-color: $alt-color !important;
@@ -56,20 +70,20 @@ nav {
 }
 
 #dropdown {
-	transition: 0.5s ease;
-	opacity: 0;
 	background-color: $alt-color;
 	max-width: 260px;
-	position: absolute;
-	right: 103px;
-	top: 66px;
+	opacity: 0;
 	pointer-events: none;
+	position: absolute;
+	right: 80px;
+	top: 36px;
+	transition: 0.5s ease;
 	button {
 		background-color: rgba(153, 153, 153, 0.2) !important;
 		height: 0px !important;
-		width: 100%;
-    	text-align: right !important;
+		text-align: right !important;
     	transition: 0.5s ease;
+		width: 100%;
     	span {
     		padding-right: 25px !important;
     	}
@@ -95,16 +109,81 @@ nav {
 	}
 }
 
-/*Not working!!*/
+/*Not working yet!!*/
 #dropdown:hover ~ #practiceAreas {
 	background-color: rgba(153, 153, 153, 0.2) !important;
 }
 
+#hamburger {
+	display: none;
+	position: absolute;
+	right: 3em;
+	top: 2em;
+	color: $primary-color;
+}
+
+#hamburger:hover {
+	color: $mid-color;
+}
+
+@media (max-width: 700px){
+	.col-md-4 {
+		width: 100% !important;
+	}
+	#nav {
+		/*text-align: center;*/
+	}
+	#hamburger {
+		display: block;
+	}
+}
+
+
+/*  Main Content Styles  */
+/*==================================================*/
+main > div {
+	background-color: rgba(171, 200, 226, 0.3);
+	margin: 2em;
+	padding: 1em 3em 3em;
+}
+
+
+/*  Home Page Styles  */
+/*==================================================*/
+#home {
+	background-color: transparent;
+	.welcome {
+		background-color: rgba(171, 200, 226, 0.3);
+		min-height: 400px;
+		padding: 1em 3em 3em;
+		#quote {
+			font-family: 'Tangerine', cursive;
+			font-size: 3em;
+			padding: 1em 3em;
+		}
+	}
+	.links {
+		background-color: rgba(171, 200, 226, 0.3);
+		min-height: 400px;
+		padding: 1em;
+	}
+}
+
+.links button {
+	background-color: $primary-color;
+	border-radius: 2em;
+	font-size: 2em;
+	height: 2em;
+	margin: 0.5em;
+	width: 2em;
+}
+
+
 /*  Footer Styles  */
 /*==================================================*/
 footer {
+	margin-top: 3em;
 	padding: 1em 0;
-	margin-top: 1em;
 	.col-md-4 {
 		padding: 1em 0;
 	}
