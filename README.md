@@ -1,10 +1,13 @@
-# Getting started with Django on Google Cloud Platform on App Engine Standard
+## Current progress
+site is published at https://stanleytsao.github.io/EscatelTaxLaw/
 
-This repository is an example of how to run a [Django](https://www.djangoproject.com/) 
-app on Google App Engine Flexible Environment. It uses the 
-[Writing your first Django app](https://docs.djangoproject.com/en/1.9/intro/tutorial01/) as the 
-example app to deploy.
-
-
-# Tutorial
-See our [Running Django in the App Engine Standard Environment](https://cloud.google.com/python/django/appengine) tutorial for instructions for setting up and deploying this sample application.
+##### To do:
+1)	Fill in content on pages in Practice Areas dir
+2)	Remove `mainData.js` & `practiceAreas.js` & any other obsolute files
+3)	Update content in `home.js`
+4)	Finalize CSS
+	-	Make Header mobile responsive
+	-	styles for home page content
+	-	styles for secondary pages contents
+5)	Find new hi-res photos for slider
+6)	Coordinate with Alex to setup Contact Form
