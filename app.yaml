@@ -1,0 +1,10 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /EscatelTaxLaw/static
+  static_dir: EscatelTaxLaw/static
+
+- url: /.*
+  script: main.app
