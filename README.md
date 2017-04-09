@@ -1,7 +1,11 @@
-## Current progress
-site is published at https://stanleytsao.github.io/EscatelTaxLaw/
+# Escatel Tax Law Website
 
-##### To do:
+## Updates:
+Version 1 is published live at www.escateltaxlaw.appspot.com
+
+## Features:
+
+##### To Do:
 1)	Fill in content on pages in Practice Areas dir
 2)	Remove `mainData.js` & `practiceAreas.js` & any other obsolute files
 3)	Update content in `home.js`
