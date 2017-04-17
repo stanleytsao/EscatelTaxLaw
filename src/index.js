@@ -77,7 +77,7 @@ class Container extends React.Component {
                   <FlatButton id="practiceAreas">Practice Areas  <i className="fa fa-chevron-down" aria-hidden="true"></i></FlatButton>
                   <FlatButton id="Contact" onClick = {() => {this.handleButton("Contact")}}>Contact</FlatButton>
 
-                  <div id="dropdown">
+                  <div id="dropdown" onMouseOver={mouseOver} onMouseOut={mouseOut}>
                     <FlatButton onClick = {() => {this.handleButton("practiceArea1")}} label="Federal & State Fraud/Evasion" />
                     <FlatButton onClick = {() => {this.handleButton("practiceArea2")}} label="Tax Controversy Practice" />
                     <FlatButton onClick = {() => {this.handleButton("practiceArea3")}} label="Employment Tax Audit (Federal & State)" />
@@ -139,6 +139,14 @@ const MainContent = ({name}) => {
   window.addEventListener("load", update);
   window.addEventListener("resize", update);
 })();
+
+// Fix Practice Areas hover
+function mouseOver() {
+    document.getElementById("practiceAreas").style.backgroundColor = "rgba(153, 153, 153, 0.2)";
+}
+function mouseOut() {
+    document.getElementById("practiceAreas").style.backgroundColor = "#E1E6FA";
+}
 
 ReactDOM.render(
   <Container />,

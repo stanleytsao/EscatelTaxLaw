@@ -7,44 +7,28 @@ const Home = () => {
 				<div className="welcome">
 					<h3>Welcome to Escatel Tax Law</h3><br />
 					<p className="quote">"A boutique law firm providing clients innovative and practical solutions to a wide range of tax issues."</p>
-					<p>"A boutique Bay Area law firm exclusively engaged in the practice of federal, state & local taxes, international taxation and estate and gift taxes."</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
+					<p className="description">Raul is an experienced tax lawyer, assisting individuals and businesses minimize taxes through strategic planning; deferring or avoiding taxes altogether. Raul works closely with companies in addressing tax issues affecting the life cycle of a business; from strategic entity formation, through dissolution. Raul assists individuals and families with all their estate planning needs, including business succession planning, trust administration and asset protection. In addition, Raul has significant experience representing individuals and businesses before federal, state and local tax authorities in a wide range of tax disputes, including international tax issues.</p>
 				</div>
 			</div>
-			<div className="col-md-3 text-center">
-				<div className="links">
-					<h4>News, Events, Updates...</h4><br />
-					<button>
+			<div className="col-md-3">
+				<div className="links text-center">
+					<h4>Social Media</h4><br />
+					<a href="https://www.linkedin.com/in/raulescatel/">
 						<i className="fa fa-linkedin" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-twitter" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-facebook" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-google-plus" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-pinterest" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-instagram" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-wikipedia-w" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-stack-overflow" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-github" aria-hidden="true"></i>
-					</button>
-					<button>
-						<i className="fa fa-code-fork" aria-hidden="true"></i>
-					</button>
+					</a>
+					<br />
+					<a href="https://www.avvo.com/attorneys/94610-ca-raul-escatel-40578.html">
+					<i className="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					<br />
+					<a href="https://www.facebook.com/search/top/?q=Raul+Escatel&init=public">
+					<i className="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+					<br />
+					<a href="https://plus.google.com/109127960067123976784">
+					<i className="fa fa-google-plus" aria-hidden="true"></i>
+					</a>
+					<br />
 				</div>
 				
 			</div>

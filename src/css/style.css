@@ -35,6 +35,7 @@ header {
     text-transform: none !important; }
 
 nav {
+  font-size: 1.2em;
   margin-top: 36px; }
   nav #Home {
     min-width: 45px !important; }
@@ -52,6 +53,7 @@ nav {
 
 #dropdown {
   background-color: #E1E6FA;
+  font-size: 0.8em;
   max-width: 260px;
   opacity: 0;
   pointer-events: none;
@@ -84,7 +86,8 @@ nav {
 
 /*Not working yet!!*/
 #dropdown:hover ~ #practiceAreas {
-  background-color: rgba(153, 153, 153, 0.2) !important; }
+  /*background-color: rgba(153, 153, 153, 0.2) !important;*/
+  background-color: red !important; }
 
 #hamburger {
   display: none;
@@ -126,24 +129,35 @@ main > div {
     padding: 15px; }
   #home .welcome {
     background-color: rgba(171, 200, 226, 0.4);
-    min-height: 400px;
+    min-height: 450px;
     padding: 1em 3em 3em; }
     #home .welcome .quote {
       font-family: 'Tangerine', cursive;
       font-size: 3em;
       padding: 1em 2em; }
+    #home .welcome .description {
+      text-align: justify; }
   #home .links {
     background-color: rgba(171, 200, 226, 0.3);
-    min-height: 400px;
+    min-height: 450px;
     padding: 1em; }
+  #home a {
+    color: #C4D7ED; }
 
-.links button {
-  background-color: #183152;
+.links i {
+  border: 2px solid #C4D7ED;
   border-radius: 2em;
   font-size: 2em;
   height: 2em;
-  margin: 0.5em;
+  line-height: 1.9em;
+  margin: 0.1em;
   width: 2em; }
+
+.links i:hover {
+  border: 2px solid #375D81;
+  color: #375D81;
+  cursor: pointer;
+  transition: 0.1s ease; }
 
 @media (max-width: 600px) {
   main > div {
@@ -157,6 +171,7 @@ main > div {
 /*  Footer Styles  */
 /*==================================================*/
 footer {
+  font-size: 1.3em;
   margin-top: 3em;
   padding: 1em 0; }
   footer .col-md-4 {
