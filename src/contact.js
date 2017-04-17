@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <div className="form col-md-8 text-center">
         
         <div className="error">

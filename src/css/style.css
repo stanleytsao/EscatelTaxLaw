@@ -223,9 +223,15 @@ footer {
     width: 70%; } }
 /*  Contact Styles  */
 /*==================================================*/
+#contact {
+  margin-top: 3em;
+  min-height: 300px; }
+
 .info {
   font-size: 1.5em;
-  padding: 0.5em; }
+  line-height: 1.3em;
+  padding-top: 2em;
+  text-align: center; }
 
 /*  Error Styles  */
 /*==================================================*/
