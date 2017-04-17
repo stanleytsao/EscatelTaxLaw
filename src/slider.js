@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
-import BayBridge2 from './img/BayBridge2.jpg';
-import LakeMerritt from './img/LakeMerritt.jpg';
-import PiedmontGate3 from './img/PiedmontGate3.png';
+import bayBridge from './img/bayBridge.jpg';
+import ggBridge from './img/ggBridge.jpg';
+import pier14 from './img/pier14.jpg';
 
 var Slideshow = React.createClass({
 	render: function () {
@@ -17,9 +17,9 @@ var Slideshow = React.createClass({
 	    };
 		return (
 			<Slider {...settings}>
-				<img id="slider" src={BayBridge2} alt="Bay Bridge"/>
-				<img id="slider" src={LakeMerritt} alt="Lake Merritt"/>
-				<img id="slider" src={PiedmontGate3} alt="Piedmont Gate"/>
+				<img id="slider" src={bayBridge} alt="Bay Bridge"/>
+				<img id="slider" src={ggBridge} alt="Golden Gate Bridge"/>
+				<img id="slider" src={pier14} alt="Pier 14"/>
 			</Slider>
 		);
 	}
