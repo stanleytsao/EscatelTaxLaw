@@ -1,15 +1,15 @@
 {
-  "main.css": "static/css/main.b6b09719.css",
-  "main.css.map": "static/css/main.b6b09719.css.map",
-  "main.js": "static/js/main.5465df91.js",
-  "main.js.map": "static/js/main.5465df91.js.map",
-  "static/media/BayBridge2.jpg": "static/media/BayBridge2.8ae1c7f7.jpg",
+  "main.css": "static/css/main.c83b84a3.css",
+  "main.css.map": "static/css/main.c83b84a3.css.map",
+  "main.js": "static/js/main.f5fcab15.js",
+  "main.js.map": "static/js/main.f5fcab15.js.map",
   "static/media/ETLlogo.png": "static/media/ETLlogo.d970c90f.png",
-  "static/media/LakeMerritt.jpg": "static/media/LakeMerritt.f17cd1ae.jpg",
-  "static/media/PiedmontGate3.png": "static/media/PiedmontGate3.2132f58f.png",
+  "static/media/bayBridge.jpg": "static/media/bayBridge.91816d9f.jpg",
   "static/media/fontawesome-webfont.eot?v=4.7.0": "static/media/fontawesome-webfont.674f50d2.eot",
   "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
   "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
   "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
-  "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff"
+  "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
+  "static/media/ggBridge.jpg": "static/media/ggBridge.ead236ac.jpg",
+  "static/media/pier14.jpg": "static/media/pier14.c69df0a1.jpg"
 }
