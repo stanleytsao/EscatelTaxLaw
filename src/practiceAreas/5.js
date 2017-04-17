@@ -2,8 +2,9 @@ import React from 'react';
 
 const Area5 = () => {
 	return (
-		<div>
+		<div className="practice">
 			<h1>CA Residency Source of Income Audits</h1>
+			<hr />
 			<p>California tax law with regards to residency is complex and nuanced and can have significant consequences for a taxpayer facing a residency audit or that may have questions about their residency status.</p>
 			<p>As a general rule,  (a) California residents are taxed on their worldwide income; (b) non-residents of California are only taxed on income from California sources; and (c) part-year residents are taxed on their worldwide income while a resident, and only on income from California sources while a non-resident.  However, the term ‘California sources’ is interpreted quite broadly.</p>
 			<p>The California Franchise Tax Board’s (“FTB”) residency unit is tasked with determining a taxpayer’s residency status.   This unit is made up of some of the most sophisticated FTB auditors, aggressively pursuing individuals’ whose residency is in question.  Since the FTB taxes California residents on their worldwide income, it has a vested interest in concluding a taxpayer is a resident of the state.</p>

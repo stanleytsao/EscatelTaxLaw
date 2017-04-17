@@ -2,8 +2,9 @@ import React from 'react';
 
 const Area7 = () => {
 	return (
-		<div>
+		<div className="practice">
 			<h1>Trusts & Estates</h1>
+			<hr />
 			<h5>Overview</h5>
 			<p>Our Trust and Estate practice involves lifetime tax and business planning for individuals, post-mortem income tax planning, and estate and trust administration.  Although the focus of the practice is on estate planning, we realize this includes more than properly drafted wills and trusts.  Therefore, we provide income tax and business planning for owners of closely held businesses, transfer tax advise and international taxation as part of our estate planning services.  We also advise and execute lifetime gift programs, insurance programs and charitable giving programs appropriate to each client's desires, needs and resources.</p>
 			<h5>Estate Planning</h5>

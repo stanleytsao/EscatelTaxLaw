@@ -2,8 +2,9 @@ import React from 'react';
 
 const Area6 = () => {
 	return (
-		<div>
+		<div className="practice">
 			<h1>International Taxation</h1>
+			<hr />
 			<p>Escatel Tax Law regularly counsels individual and businesses on the nuances of the United States (U.S.) tax regime and its interrelation with the tax law of other countries pursuant to tax treaties.</p>
 			<h5>Inbound Taxation</h5>
 			<p>Increasing globalization has led foreign individuals and businesses to create business opportunities within the U.S.  We assist foreign investors find efficient tax strategies to conduct business in the U.S., including the formation of business entities to hold business assets.  We have particular expertise in residency determinations for purposes of U.S. federal and state taxation and have successfully represented individuals in residency audits before the IRS and California Franchise Tax Board.</p>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto|Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300|Tangerine");
 /*  General Styles  */
 /*==================================================*/
 html, body {
@@ -24,7 +24,7 @@ header, header button, footer {
 /*  Slider Styles  */
 /*==================================================*/
 .slick-slider {
-  margin-top: 5em; }
+  margin-top: 6em; }
 
 /*  Header Styles  */
 /*==================================================*/
@@ -36,6 +36,7 @@ header {
 
 nav {
   font-size: 1.2em;
+  font-weight: bold;
   margin-top: 36px; }
   nav #Home {
     min-width: 45px !important; }
@@ -84,21 +85,24 @@ nav {
   #dropdown:hover button {
     height: 36px !important; }
 
-/*Not working yet!!*/
-#dropdown:hover ~ #practiceAreas {
-  /*background-color: rgba(153, 153, 153, 0.2) !important;*/
-  background-color: red !important; }
-
 #hamburger {
   display: none;
   position: absolute;
-  right: 4.5em;
+  right: 3em;
   top: 3em;
   color: #183152; }
 
 #hamburger:hover {
   color: #ABC8E2; }
 
+@media (min-width: 600px) and (max-width: 992px) {
+  header .col-md-4 {
+    float: left;
+    width: 33.33%; }
+
+  header .col-md-8 {
+    float: left;
+    width: 66.67%; } }
 @media (max-width: 600px) {
   header, header .container {
     padding: 0 !important; }
@@ -107,19 +111,19 @@ nav {
     width: 100% !important; }
 
   #nav {
-    /*text-align: center;*/ }
+    font-size: 1em;
+    margin-top: 0;
+    text-align: center; }
 
   #hamburger {
     display: block; }
 
   #dropdown {
-    top: 72px; } }
+    font-size: 1em; } }
 /*  Main Content Styles  */
 /*==================================================*/
 main > div {
-  background-color: rgba(171, 200, 226, 0.3);
-  margin: 2em;
-  padding: 1em 3em 3em; }
+  background-color: rgba(171, 200, 226, 0.3); }
 
 /*  Home Page Styles  */
 /*==================================================*/
@@ -145,13 +149,13 @@ main > div {
     color: #C4D7ED; }
 
 .links i {
-  border: 2px solid #C4D7ED;
-  border-radius: 2em;
-  font-size: 2em;
-  height: 2em;
-  line-height: 1.9em;
-  margin: 0.1em;
-  width: 2em; }
+  border: 2.3px solid #C4D7ED;
+  border-radius: 2.3em;
+  font-size: 2.5em;
+  height: 2.3em;
+  line-height: 2.2em;
+  margin: 0.2em 0.4em;
+  width: 2.3em; }
 
 .links i:hover {
   border: 2px solid #375D81;
@@ -159,15 +163,37 @@ main > div {
   cursor: pointer;
   transition: 0.1s ease; }
 
+@media (max-width: 992px) {
+  #home .welcome {
+    min-height: 0; }
+
+  #home .links {
+    min-height: 0; } }
 @media (max-width: 600px) {
-  main > div {
-    margin: 2em 1em; }
-
-  #Home {
-    padding: 0.5em; }
-
   .quote {
     padding: 0.5em !important; } }
+/*  About Styles  */
+/*==================================================*/
+#About {
+  margin: 1em;
+  padding: 1em; }
+  #About h4 {
+    padding-left: 1em; }
+
+/*  Practice Styles  */
+/*==================================================*/
+.practice {
+  margin: 1em;
+  padding: 1em; }
+  .practice h1 {
+    font-size: 2.5em;
+    padding: 0.5em;
+    text-align: center; }
+  .practice h5 {
+    padding-left: 1em; }
+  .practice hr {
+    padding-bottom: 2em; }
+
 /*  Footer Styles  */
 /*==================================================*/
 footer {
@@ -183,7 +209,7 @@ footer {
     margin: 0; }
 
 @media (min-width: 550px) and (max-width: 992px) {
-  .col-md-4 {
+  footer .col-md-4 {
     float: left;
     width: 33.33%; } }
 @media (max-width: 549px) {
@@ -195,5 +221,21 @@ footer {
     display: block !important;
     margin: 0 auto !important;
     width: 70%; } }
+/*  Contact Styles  */
+/*==================================================*/
+.info {
+  font-size: 1.5em;
+  padding: 0.5em; }
+
+/*  Error Styles  */
+/*==================================================*/
+.error {
+  color: #f4c842;
+  font-size: 2em;
+  padding: 2em;
+  text-align: center; }
+  .error i {
+    font-size: 1.2em;
+    padding: 0 0.5em; }
 
 /*# sourceMappingURL=style.css.map */

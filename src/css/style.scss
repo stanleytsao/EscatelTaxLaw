@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Tangerine');
 
 $font-stack: 'Roboto', Helvetica, sans-serif;
 $primary-color: #183152;
@@ -39,7 +39,7 @@ header, header button, footer {
 /*  Slider Styles  */
 /*==================================================*/
 .slick-slider {
-	margin-top: 5em;
+	margin-top: 6em;
 }
 
 
@@ -55,6 +55,7 @@ header {
 
 nav {
 	font-size: 1.2em;
+	font-weight: bold;
 	margin-top: 36px;
 	#Home {
 		min-width: 45px !important;
@@ -118,23 +119,27 @@ nav {
 	}
 }
 
-/*Not working yet!!*/
-#dropdown:hover ~ #practiceAreas {
-	/*background-color: rgba(153, 153, 153, 0.2) !important;*/
-	background-color: red !important;
-}
-
-
 #hamburger {
 	display: none;
 	position: absolute;
-	right: 4.5em;
+	right: 3em;
 	top: 3em;
 	color: $primary-color;
 }
 
 #hamburger:hover {
 	color: $mid-color;
+}
+
+@media (min-width: 600px) and (max-width: 992px){
+	header .col-md-4 {
+		float: left;
+		width: 33.33%;
+	}
+	header .col-md-8 {
+		float: left;
+		width: 66.67%;
+	}
 }
 
 @media (max-width: 600px){
@@ -145,13 +150,15 @@ nav {
 		width: 100% !important;
 	}
 	#nav {
-		/*text-align: center;*/
+		font-size: 1em;
+		margin-top: 0;
+		text-align: center;
 	}
 	#hamburger {
 		display: block;
 	}
 	#dropdown {
-		top: 72px;
+		font-size: 1em;
 	}
 }
 
@@ -160,8 +167,6 @@ nav {
 /*==================================================*/
 main > div {
 	background-color: rgba(171, 200, 226, 0.3);
-	margin: 2em;
-	padding: 1em 3em 3em;
 }
 
 
@@ -196,13 +201,13 @@ main > div {
 }
 
 .links i {
-	border: 2px solid $primary-text-color;
-	border-radius: 2em;
-	font-size: 2em;
-	height: 2em;
-	line-height: 1.9em;
-	margin: 0.1em;
-	width: 2em;
+	border: 2.3px solid $primary-text-color;
+	border-radius: 2.3em;
+	font-size: 2.5em;
+	height: 2.3em;
+	line-height: 2.2em;
+	margin: 0.2em 0.4em;
+	width: 2.3em;
 }
 
 .links i:hover {
@@ -212,15 +217,47 @@ main > div {
 	transition: 0.1s ease;
 }
 
+@media (max-width: 992px){
+	#home .welcome {
+		min-height: 0;
+	}
+	#home .links {
+		min-height: 0;
+	}
+}
+
 @media (max-width: 600px){
-	main > div {
-		margin: 2em 1em;
-	}
-	#Home {
-		padding: 0.5em;
-	}
 	.quote {
 		padding: 0.5em !important;
+	}
+}
+
+/*  About Styles  */
+/*==================================================*/
+#About {
+	margin: 1em;
+	padding: 1em;
+	h4 {
+		padding-left: 1em; 
+	}
+}
+
+
+/*  Practice Styles  */
+/*==================================================*/
+.practice {
+	margin: 1em;
+	padding: 1em;
+	h1 {
+		font-size: 2.5em;
+		padding: 0.5em;
+		text-align: center;
+	}
+	h5 {
+		padding-left: 1em; 
+	}
+	hr {
+		padding-bottom: 2em;
 	}
 }
 
@@ -244,7 +281,7 @@ footer {
 }
 
 @media (min-width: 550px) and (max-width: 992px){
-	.col-md-4 {
+	footer .col-md-4 {
 		float: left;
 		width: 33.33%;
 	}
@@ -261,4 +298,28 @@ footer {
 		width: 70%;
 	}
 }
+
+
+/*  Contact Styles  */
+/*==================================================*/
+.info {
+	font-size: 1.5em;
+	padding: 0.5em;
+}
+
+
+/*  Error Styles  */
+/*==================================================*/
+.error {
+	color: #f4c842;
+	font-size: 2em;
+	padding: 2em;
+	text-align: center;
+	i {
+		font-size: 1.2em;
+		padding: 0 0.5em;
+	}
+}
+
+
 

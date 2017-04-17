@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-  	<div>
+  	<div id="About">
   		<h2 className="text-center">TERMS OF USE</h2>
     	<p>These Terms of Use govern your access to the Escatel Tax Law firm website at www.escateltaxlaw.com (the "Website" or "Site") and your use of any materials published on the Website, including any information accessed on or through this Site. By accessing or using this Website, you indicate your acceptance of these Terms of Use and agree to be bound by them. If you do not agree to these Terms of Use, you should not access or use the Website.</p>
     

@@ -2,8 +2,9 @@ import React from 'react';
 
 const Area2 = () => {
 	return (
-		<div>
+		<div className="practice">
 			<h1>Tax Controversy Practice</h1>
+			<hr />
 			<p>Representing taxpayers in disputes with federal, state and local taxing authorities is a substantial part of our practice.  We participate actively with clients and their accountants in resolving tax controversies at the audit and appellate level before the Internal Revenue Service (IRS), the California Franchise Tax Board (FTB) and the California State Board of Equalization (BOE) in addition to local taxing authorities.</p>
 			<p>We provide clients with advice, counsel and representation in all aspects of federal, state and local tax matters.  We look to achieve unsurpassed results at all levels of tax practice, from examination to collection. Specific areas of concentration include:</p>
 			<h5>Resolution of IRS Controversies</h5>

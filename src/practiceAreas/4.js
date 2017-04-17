@@ -2,9 +2,15 @@ import React from 'react';
 
 const Area4 = () => {
 	return (
-		<div>
+		<div className="practice">
 			<h1>Business Formation & Tax Planning</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<hr />
+			
+			<div className="error">
+				<i className="fa fa-exclamation-triangle" aria-hidden="true"></i>
+				<span>This page is currently under construction.</span>
+			</div>
+			
 		</div>
 	)	
 }
